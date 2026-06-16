@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saver Uhilesa — автоотправка медиа в Telegram</title>
+  <meta name="description" content="Android-приложение, которое автоматически сохраняет видео, фото и геолокацию доверенным людям в Telegram — раньше, чем телефон заберут, разобьют или разрядят. Bot API + TDLib MTProto.">
+  <link rel="icon" href="img/icon.png" type="image/png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Hero -->
+  <header class="hero">
+    <div class="container">
+      <img src="img/icon.png" alt="Saver Uhilesa" class="hero__icon" width="96" height="96">
+      <h1 class="hero__title">Saver Uhilesa</h1>
+      <p class="hero__tagline">Видео, фото и геолокация автоматически уходят доверенным людям в&nbsp;Telegram&#8209;группы&nbsp;— раньше, чем что&#8209;то случится с телефоном</p>
+      <a href="https://github.com/strannikuhiles/saver/releases/latest/download/saver_uhilesa.apk" class="btn btn--primary btn--lg"
+         data-goatcounter-click="download-apk-hero">
+        Скачать APK
+      </a>
+      <p class="hero__version">v1.28 &middot; Android&nbsp;8.0+ &middot; ~89&nbsp;МБ</p>
+    </div>
+  </header>
+
+  <!-- Why -->
+  <section id="why" class="section">
+    <div class="container">
+      <h2 class="section__title">Зачем это нужно</h2>
+      <p class="section__subtitle">Телефон могут забрать, разбить или разрядить. Saver&nbsp;Uhilesa успевает главное&nbsp;— мгновенно отправить видео, фото и геолокацию доверенным людям, раньше чем что&#8209;то случится.</p>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-card__icon">🛡️</div>
+          <h3>Доказательства&nbsp;— вне телефона</h3>
+          <p>Каждое видео и фото мгновенно уходит доверенным людям в Telegram. Даже если устройство изъяли, разбили или потеряли&nbsp;— запись уже у близких</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card__icon">📍</div>
+          <h3>Близкие знают, где вы</h3>
+          <p>Геолокация периодически уходит в отдельную группу. Пока телефон включён и в сети, координаты обновляются автоматически, а если связь пропала или устройство выключено&nbsp;— отправка продолжится сразу после включения или подключения к сети. Родные и адвокат видят местоположение без звонков и переписки</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card__icon">⚡</div>
+          <h3>Работает само, без вашего участия</h3>
+          <p>Не нужно успевать нажать «отправить»: приложение ловит новое видео за секунды и работает в фоне даже после перезагрузки</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card__icon">♻️</div>
+          <h3>Ничего не теряется</h3>
+          <p>Нет сети&nbsp;— оффлайн&#8209;очередь дождётся связи и дошлёт всё с ретраями. Большие файлы до 2&nbsp;ГБ уходят через MTProto</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card__icon">🎚️</div>
+          <h3>Выгрузка по команде</h3>
+          <p>В любой момент можно вручную отправить нужные медиа и геолокацию одной кнопкой&nbsp;— разово, не включая постоянную работу</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card__icon">🤫</div>
+          <h3>Тихий автоматический режим</h3>
+          <p>Включите фоновую работу тумблерами&nbsp;— или одной кнопкой «ALARM» сразу запустите отправку всего: новые видео, фото и геолокация уходят сами, без вашего участия. Тихо&nbsp;— без звука и без заметных уведомлений</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Screenshots -->
+  <section id="screenshots" class="section section--alt">
+    <div class="container">
+      <h2 class="section__title">Интерфейс</h2>
+      <div class="screenshots-scroll">
+        <div class="screenshot">
+          <img src="img/screenshot-home.png" alt="Главный экран" loading="lazy">
+          <span class="screenshot__label">Главная</span>
+        </div>
+        <div class="screenshot">
+          <img src="img/screenshot-settings.png" alt="Настройки" loading="lazy">
+          <span class="screenshot__label">Настройки</span>
+        </div>
+        <div class="screenshot">
+          <img src="img/screenshot-connection.png" alt="Подключение" loading="lazy">
+          <span class="screenshot__label">Подключение</span>
+        </div>
+        <div class="screenshot">
+          <img src="img/screenshot-log.png" alt="Журнал отправок" loading="lazy">
+          <span class="screenshot__label">Журнал</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Getting Started -->
+  <section id="start" class="section">
+    <div class="container">
+      <h2 class="section__title">Как начать</h2>
+      <ol class="steps">
+        <li>
+          <span class="steps__num">1</span>
+          <div>
+            <strong>Скачайте и установите APK</strong>
+            <p>При запросе — разрешите установку из неизвестных источников для вашего браузера/файлового менеджера</p>
+          </div>
+        </li>
+        <li>
+          <span class="steps__num">2</span>
+          <div>
+            <strong>Создайте бота</strong>
+            <p>Откройте <a href="https://t.me/BotFather" target="_blank" rel="noopener">@BotFather</a> в Telegram, создайте бота и скопируйте токен</p>
+          </div>
+        </li>
+        <li>
+          <span class="steps__num">3</span>
+          <div>
+            <strong>Добавьте бота в группу</strong>
+            <p>Создайте группу (или используйте существующую) и добавьте в неё бота с правом отправки сообщений</p>
+          </div>
+        </li>
+        <li>
+          <span class="steps__num">4</span>
+          <div>
+            <strong>Настройте приложение</strong>
+            <p>Вставьте токен, нажмите «Проверить», затем «Найти группы» — отметьте нужные</p>
+          </div>
+        </li>
+        <li>
+          <span class="steps__num">5</span>
+          <div>
+            <strong>Включите мониторинг</strong>
+            <p>Выдайте разрешения на медиа, геолокацию и уведомления. Включите автоотправку — готово!</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- Download -->
+  <section id="download" class="section section--alt">
+    <div class="container download-block">
+      <h2 class="section__title">Скачать</h2>
+      <div class="download-info">
+        <p><strong>Версия:</strong> 1.28</p>
+        <p><strong>Размер:</strong> ~89 МБ (4 ABI + TDLib)</p>
+        <p><strong>Требуется:</strong> Android 8.0 (API 26) и выше</p>
+      </div>
+      <a href="https://github.com/strannikuhiles/saver/releases/latest/download/saver_uhilesa.apk" class="btn btn--primary btn--lg"
+         data-goatcounter-click="download-apk-section">
+        Скачать APK
+      </a>
+      <p class="download-note">
+        Исходный код:
+        <a href="https://github.com/strannikuhiles/saver" target="_blank" rel="noopener">github.com/strannikuhiles/saver</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- Donate -->
+  <section id="donate" class="section">
+    <div class="container">
+      <h2 class="section__title">Поддержать автора</h2>
+      <p class="section__subtitle">Если приложение полезно — можете поддержать картой, Google&nbsp;Pay, Apple&nbsp;Pay или криптой</p>
+
+      <div class="donate-grid">
+        <div class="donate-card donate-card--cta">
+          <h3>Картой / Google&nbsp;Pay / Apple&nbsp;Pay</h3>
+          <a href="https://send.monobank.ua/jar/8qf6WUNCUM" target="_blank" rel="noopener" class="btn btn--primary btn--lg">
+            Задонатить
+          </a>
+          <p class="donate-note">Visa / Mastercard / Google&nbsp;Pay / Apple&nbsp;Pay — через Monobank</p>
+        </div>
+        <div class="donate-card">
+          <h3>Крипта</h3>
+          <div class="crypto-list">
+            <div class="crypto-item">
+              <span class="crypto-item__label">BTC</span>
+              <code class="crypto-item__addr">18L2EKNSvbrKHgJjFb6EjEgeXkNK7CKZMu</code>
+            </div>
+            <div class="crypto-item">
+              <span class="crypto-item__label">ETH (ERC-20)</span>
+              <code class="crypto-item__addr">0x3efbc3d13933df2f87773981e438a72ee5b173d7</code>
+            </div>
+            <div class="crypto-item">
+              <span class="crypto-item__label">USDT (TRC-20)</span>
+              <code class="crypto-item__addr">TRJmM7wBX3LVJMB81konWX73ikALcTiHRp</code>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>
+        <a href="https://github.com/strannikuhiles/saver" target="_blank" rel="noopener">GitHub</a>
+        &middot;
+        <a href="#" class="footer__privacy">Privacy Policy</a>
+      </p>
+      <p class="footer__copy">&copy; 2026 Saver Uhilesa</p>
+    </div>
+  </footer>
+
+  <!-- GoatCounter — privacy-friendly analytics, no cookies -->
+  <script data-goatcounter="https://saver-uhilesa.goatcounter.com/count"
+          async src="//gc.zgo.at/count.js"></script>
+
+</body>
+</html>
